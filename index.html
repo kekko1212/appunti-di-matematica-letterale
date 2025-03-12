@@ -4,92 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monomi e Binomi - Ripasso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5; }
-        h1, h2 { color: #333; }
-        ul { margin-left: 20px; }
-        .section { margin-bottom: 20px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        table, th, td { border: 1px solid #ccc; }
-        th, td { padding: 10px; text-align: left; }
-        .highlight { background-color: #f8f8f8; padding: 10px; border-radius: 5px; }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #f9fafb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h2, h3 {
+            color: #1f2937;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4f46e5;
+            color: white;
+        }
+
+        td {
+            background-color: white;
+        }
+
+        .highlight {
+            background-color: #eef2ff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
 
-<h1>📚 Ripasso: Monomi e Binomi</h1>
+    <h2>📚 Monomi e Binomi - Ripasso veloce</h2>
 
-<div class="section">
-    <h2>Cosa sono monomi e binomi?</h2>
-    <h3>Cos’è un monomio?</h3>
-    <p>Espressione algebrica composta da un solo termine formato da:</p>
-    <ul>
-        <li>Un coefficiente numerico (es. 3, -5, 1)</li>
-        <li>Lettere con eventuali esponenti (es. x, x², ab, xy³)</li>
-    </ul>
-    <p><strong>Esempi:</strong> 5x, -3a², 2xy, 4x²y³, 7</p>
+    <div class="box">
+        <h3>🧐 Cos’è un monomio?</h3>
+        <p>È un’espressione algebrica formata da un solo termine che contiene:</p>
+        <ul>
+            <li>Un coefficiente numerico (3, -5, 1)</li>
+            <li>Una o più lettere con eventuali esponenti (es.: x, x², ab, xy³)</li>
+        </ul>
+        <p><strong>Esempi:</strong> 5x, -3a², 2xy, 4x²y³, 7</p>
 
-    <h3>Grado di un monomio</h3>
-    <p>Somma degli esponenti delle lettere.</p>
-    <ul>
-        <li>4x²y³ ha grado 5 (2+3).</li>
-        <li>7x³ ha grado 3.</li>
-    </ul>
-</div>
+        <div class="highlight">
+            <strong>📌 Grado del monomio:</strong> somma degli esponenti delle lettere<br>
+            <em>Es.: 4x²y³ ha grado 5 perché 2+3=5</em>
+        </div>
+    </div>
 
-<div class="section">
-    <h2>🧮 Operazioni con i monomi</h2>
-    <h3>1. Somma e sottrazione</h3>
-    <p>Si possono sommare o sottrarre <strong>solo monomi simili</strong>.</p>
-    <p><strong>Esempi:</strong></p>
-    <ul>
-        <li>3x + 5x = 8x ✔️</li>
-        <li>3x² + x² = 4x² ✔️</li>
-        <li>2a + 3b non semplificabile ✖️</li>
-    </ul>
+    <div class="box">
+        <h3>➕ Operazioni con i monomi</h3>
 
-    <h3>2. Moltiplicazione</h3>
-    <p>Moltiplicare numeri, poi lettere (somma degli esponenti).</p>
-    <p>Esempi:</p>
-    <ul>
-        <li>(2x²) × (3x³) = 6x⁵</li>
-        <li>(-2a²) × (3a³) = -6a⁵</li>
-    </ul>
+        <h4>Somma e Sottrazione</h4>
+        <p>Solo monomi <strong>simili</strong> (stesse lettere e esponenti).</p>
+        <ul>
+            <li>3x + 5x = 8x ✔️</li>
+            <li>3x² + x² = 4x² ✔️</li>
+            <li>2a + 3b <em>non si può semplificare</em> ❌</li>
+        </ul>
 
-    <h3>3. Divisione</h3>
-    <p>Dividere numeri, poi lettere (sottrazione degli esponenti).</p>
-    <p>Esempi:</p>
-    <ul>
-        <li>8x⁵ : 2x² = 4x³</li>
-        <li>-9a⁴ : 3a² = -3a²</li>
-    </ul>
-</div>
+        <h4>Moltiplicazione</h4>
+        <p>Moltiplica coefficienti, somma esponenti lettere uguali.</p>
+        <p>Esempi:</p>
+        <ul>
+            <li>(2x²) × (3x³) = 6x³</li>
+            <li>(-2a²) × (3a³) = -6a³</li>
+        </ul>
 
-<div class="section">
-    <h2>📌 Infografica rapida di ripasso</h2>
-    <table>
-        <tr>
-            <th>Operazione</th>
-            <th>Cosa fare?</th>
-            <th>Esempio</th>
-        </tr>
-        <tr>
-            <td>Somma/Sottrazione</td>
-            <td>Sommare solo termini simili</td>
-            <td>3x + 2x = 5x</td>
-        </tr>
-        <tr>
-            <td>Moltiplicazione</td>
-            <td>Moltiplicare coefficienti, sommare esponenti lettere uguali</td>
-            <td>2x² · 3x = 6x³</td>
-        </tr>
-        <tr>
-            <td>Divisione</td>
-            <td>Dividere coefficienti, sottrarre esponenti lettere</td>
-            <td>8x³ : 2x = 4x²</td>
-        </tr>
-    </table>
-</div>
+        <h4>Divisione</h4>
+        <p>Dividi coefficienti, sottrai esponenti lettere uguali.</p>
+        <p>Esempi:</p>
+        <ul>
+            <li>8x⁵ : 2x² = 4x³</li>
+            <li>-9a⁴ : 3a² = -3a³</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h3>🎯 Infografica rapida</h3>
+        <table>
+            <tr>
+                <th>Operazione</th>
+                <th>Cosa devi fare?</th>
+                <th>Esempio</th>
+            </tr>
+            <tr>
+                <td>➕ Somma/Sottrazione</td>
+                <td>Solo monomi simili</td>
+                <td>3x + 2x = 5x</td>
+            </tr>
+            <tr>
+                <td>✖️ Moltiplicazione</td>
+                <td>Moltiplicare coefficienti e sommare esponenti</td>
+                <td>2x²·3x = 6x³</td>
+            </tr>
+            <tr>
+                <td>➗ Divisione</td>
+                <td>Dividere coefficienti, sottrarre esponenti</td>
+                <td>8x³ : 2x = 4x²</td>
+            </tr>
+        </table>
+    </div>
 
 </body>
 </html>
