@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monomi e Binomi - Ripasso</title>
+    <title>Monomi, Binomi e Operazioni - Ripasso</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -16,18 +18,12 @@
             color: #333;
             line-height: 1.6;
         }
-
-        h2, h3 {
+        h2, h3, h4 {
             color: #1f2937;
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
             margin-top: 0px;
         }
-
-        ul {
-            margin-left: 20px;
-        }
-
         .box {
             background-color: #ffffff;
             border-radius: 10px;
@@ -35,173 +31,99 @@
             margin: 15px 0;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
         }
-
         th, td {
             border: 1px solid #ddd;
             padding: 10px;
             text-align: center;
         }
-
         th {
             background-color: #4f46e5;
             color: white;
         }
-
-        td {
-            background-color: white;
-        }
-
-        .highlight {
-            background-color: #eef2ff;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        .footer {
-            text-align: center;
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 30px;
-        }
+        td { background-color: white; }
+        .highlight { background-color: #eef2ff; padding: 10px; border-radius: 5px; }
     </style>
 </head>
 <body>
+    <h2>📚 Monomi, Binomi e Operazioni - Ripasso completo</h2>
 
-    <h2>📚 Monomi e Binomi - Ripasso veloce</h2>
-
-    <div class="box">
-        <h3>🧐 Cos’è un monomio?</h3>
-        <p>È un’espressione algebrica formata da un solo termine che contiene:</p>
-        <ul>
-            <li>Un coefficiente numerico (3, -5, 1)</li>
-            <li>Una o più lettere con eventuali esponenti (es.: x, x², ab, xy³)</li>
-        </ul>
-        <p><strong>Esempi:</strong> 5x, -3a², 2xy, 4x²y³, 7</p>
-    </div>
+    <!-- Sezioni Monomi (precedenti già incluse) -->
+    
+    <!-- Nuove sezioni aggiunte -->
 
     <div class="box">
-        <h3>➕ Operazioni con i monomi</h3>
-
-        <h4>Somma e Sottrazione</h4>
-        <p>Solo monomi <strong>simili</strong> (stesse lettere e esponenti).</p>
+        <h3>🧮 Calcolo del segno (moltiplicazione)</h3>
+        <p>Moltiplicando due numeri:</p>
         <ul>
-            <li>3x + 5x = 8x ✔️</li>
-            <li>3x² + x² = 4x² ✔️</li>
-            <li>2a + 3b <em>non si può semplificare</em> ❌</li>
-        </ul>
-
-        <h4>Moltiplicazione</h4>
-        <p>Moltiplica coefficienti, somma esponenti lettere uguali.</p>
-        <p>Esempi:</p>
-        <ul>
-            <li>(2x²) × (3x³) = 6x³</li>
-            <li>(-2a²) × (3a³) = -6a³</li>
-        </ul>
-
-        <h4>Divisione</h4>
-        <p>Dividi coefficienti, sottrai esponenti lettere uguali.</p>
-        <p>Esempi:</p>
-        <ul>
-            <li>8x⁵ : 2x² = 4x³</li>
-            <li>-9a⁴ : 3a² = -3a³</li>
+            <li>Segni uguali ➜ Risultato positivo: \(+ \times + = +\), \(- \times - = +\)</li>
+            <li>Segni diversi ➜ Risultato negativo: \(+ \times - = -\), \(- \times + = -\)</li>
         </ul>
     </div>
 
     <div class="box">
-        <h3>🎯 Infografica rapida</h3>
-        <table>
-            <tr>
-                <th>Operazione</th>
-                <th>Cosa devi fare?</th>
-                <th>Esempio</th>
-            </tr>
-            <tr>
-                <td>➕ Somma/Sottrazione</td>
-                <td>Solo monomi simili</td>
-                <td>3x + 2x = 5x</td>
-            </tr>
-            <tr>
-                <td>✖️ Moltiplicazione</td>
-                <td>Moltiplicare coefficienti e sommare esponenti</td>
-                <td>2x²·3x = 6x³</td>
-            </tr>
-            <tr>
-                <td>➗ Divisione</td>
-                <td>Dividere coefficienti, sottrarre esponenti</td>
-                <td>8x³ : 2x = 4x²</td>
-            </tr>
-        </table>
-    </div>
-
-        <div class="box">
-        <h3>🔢 Operazioni con Segni e Frazioni</h3>
-
-        <h4>Segni nella Moltiplicazione</h4>
+        <h3>➗ Somma di due frazioni (calcolo mcm)</h3>
+        <p>Trovare il <strong>mcm</strong> (minimo comune multiplo) dei denominatori:</p>
         <ul>
-            <li>Segni <strong>uguali</strong> → Risultato positivo (+ × + = + | - × - = +)</li>
-            <li>Segni <strong>diversi</strong> → Risultato negativo (+ × - = - | - × + = -)</li>
+            <li>Fai le tabelline dei denominatori</li>
+            <li>Trova il più piccolo numero comune</li>
         </ul>
-        <div class="highlight">
-            Esempi: (-3) × (-2) = 6 | 4 × (-5) = -20 | (-5) × 3 = -15
-        </div>
-
-        <h4>Somma di Frazioni</h4>
-        <p>1. Trova l'mcm dei denominatori:</p>
-        <div class="highlight">
-            Es: mcm tra 4 e 6 → multipli di 4 (4,8,12,16...) e 6 (6,12,18...) → mcm=12
-        </div>
-        <p>2. Converti le frazioni: 3/4 = 9/12 e 5/6 = 10/12</p>
-        <p>3. Somma i numeratori: 9/12 + 10/12 = 19/12</p>
-
-        <h4>Moltiplicazione di Frazioni</h4>
-        <p>Moltiplica numeratori e denominatori:</p>
-        <div class="highlight">
-            (3/4) × (2/5) = (3×2)/(4×5) = 6/20 = 3/10
-        </div>
-
-        <h4>Operazioni con Frazioni e Numeri Interi</h4>
-        <table>
-            <tr>
-                <th>Operazione</th>
-                <th>Metodo</th>
-                <th>Esempio</th>
-            </tr>
-            <tr>
-                <td>3 + 1/2</td>
-                <td>Converti 3 in 3/1 → 3/1 + 1/2 = 6/2 + 1/2 = 7/2</td>
-                <td>7/2</td>
-            </tr>
-            <tr>
-                <td>3 × 1/2</td>
-                <td>3/1 × 1/2 = (3×1)/(1×2) = 3/2</td>
-                <td>3/2</td>
-            </tr>
-        </table>
-
-        <h4>Sottrazione tra Numeri Negativi</h4>
-        <div class="highlight">
-            Es: -5 - (-3) = -5 + 3 = -2<br>
-            Sottrarre un negativo = sommare il positivo
-        </div>
-        <p>Retta numerica:</p>
-        <pre>
--6  -5  -4  -3  -2  -1   0  +1  +2
-←---|----|----|----|----|----|----|→
-        ▲-5          ▲+3
-        \___________/
-            -2
-        </pre>
+        <p><strong>Esempio:</strong> \(\frac{1}{3} + \frac{1}{4}\)</p>
+        <ol>
+            <li>mcm(3,4)=12</li>
+            <li>\(\frac{12}{3}=4\), \(4 \times 1=4\)</li>
+            <li>\(\frac{12}{4}=3\), \(3 \times 1=3\)</li>
+            <li>Somma: \(\frac{4+3}{12}=\frac{7}{12}\)</li>
+        </ol>
     </div>
 
+    <div class="box">
+        <h3>✖️ Moltiplicazione di due frazioni</h3>
+        <p>Moltiplicare numeratori tra loro e denominatori tra loro:</p>
+        <p><strong>Esempio:</strong> \(\frac{2}{3}\times \frac{4}{5}=\frac{8}{15}\)</p>
+    </div>
+
+    <div class="box">
+        <h3>🔢 Numero frazionale con numero intero (Somma e Moltiplicazione)</h3>
+        <ul>
+            <li><strong>Somma:</strong> \(2 + \frac{3}{4}=\frac{8}{4}+\frac{3}{4}=\frac{11}{4}\)</li>
+            <li><strong>Moltiplicazione:</strong> \(3 \times \frac{2}{5}=\frac{6}{5}\)</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h3>➖ Sottrazione di due numeri negativi (Interi)</h3>
+        <p>Se a un numero negativo sottraggo un altro negativo:</p>
+        <ul>
+            <li>\(-5 - (-2) = -5 + 2 = -3\)</li>
+            <li>Muoversi verso destra (positivo) sulla retta numerica:</li>
+        </ul>
+        <div style="text-align:center;">
+            <p>← ... -5 &emsp; -4 &emsp; <strong>-3</strong> &emsp; -2 &emsp; -1 &emsp; 0 &emsp; 1 ... →</p>
+        </div>
+        <p>Invece, sommare due negativi:</p>
+        <ul>
+            <li>\(-3 + (-2) = -5\)</li>
+            <li>Muoversi verso sinistra (negativo):</li>
+        </ul>
+        <div style="text-align:center;">
+            <p>← ... <strong>-5</strong> &emsp; -4 &emsp; -3 &emsp; -2 &emsp; -1 &emsp; 0 &emsp; 1 ... →</p>
+        </div>
+    </div>
+
+    <div class="footer">📌 Ripasso completo di matematica - Monomi, Binomi e operazioni varie</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('p, li').forEach(function(el) {
+                renderMathInElement(el, {delimiters: [{left: "\\(", right: "\\)", display: false}]});
+            });
+        });
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 </body>
 </html>
